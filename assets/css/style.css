@@ -880,7 +880,7 @@ p {
   -moz-box-shadow: 0px 30px 40px 0px rgba(1, 11, 60, 0.06);
   box-shadow: 0px 30px 40px 0px rgba(1, 11, 60, 0.06);
 }
-.header__area.sticky {
+.header__transparent, .header__area.sticky {
   position: fixed;
   top: 0;
   left: 0;
@@ -894,49 +894,49 @@ p {
   -moz-box-shadow: 0px 10px 20px 0px rgba(8, 0, 42, 0.08);
   box-shadow: 0px 10px 20px 0px rgba(8, 0, 42, 0.08);
 }
-.header__area.sticky .header__search input {
+.header__transparent .header__search input, .header__area.sticky .header__search input {
   background: #edeef3;
 }
-.header__area.sticky .logo .logo-white {
+.header__transparent .logo .logo-white, .header__area.sticky .logo .logo-white {
   display: none;
 }
-.header__area.sticky .logo .logo-black {
+.header__transparent .logo .logo-black, .header__area.sticky .logo .logo-black {
   display: block;
 }
-.header__area.sticky .main-menu-3 ul li a {
+.header__transparent .main-menu-3 ul li a, .header__area.sticky .main-menu-3 ul li a {
   color: #0e1133;
 }
-.header__area.sticky .main-menu-3 ul li a::after {
+.header__transparent .main-menu-3 ul li a::after, .header__area.sticky .main-menu-3 ul li a::after {
   color: #0e1133;
 }
-.header__area.sticky .main-menu-3 ul li a::before {
+.header__transparent .main-menu-3 ul li a::before, .header__area.sticky .main-menu-3 ul li a::before {
   background: #0e1133;
 }
-.header__area.sticky .main-menu-3 ul li .submenu li a::before {
+.header__transparent .main-menu-3 ul li .submenu li a::before, .header__area.sticky .main-menu-3 ul li .submenu li a::before {
   background: #2b4eff;
 }
-.header__area.sticky .header__search-2 svg .st0 {
+.header__transparent .header__search-2 svg .st0, .header__area.sticky .header__search-2 svg .st0 {
   fill: #0e1133;
 }
-.header__area.sticky .header__search-2 svg .st1 {
+.header__transparent .header__search-2 svg .st1, .header__area.sticky .header__search-2 svg .st1 {
   fill: #121317;
 }
-.header__area.sticky .cat-menu {
+.header__transparent .cat-menu, .header__area.sticky .cat-menu {
   color: #0e1133;
 }
-.header__area.sticky .cat-menu:hover {
+.header__transparent .cat-menu:hover, .header__area.sticky .cat-menu:hover {
   color: #2b4eff;
 }
-.header__area.sticky .cat-menu:hover svg .cat-dot {
+.header__transparent .cat-menu:hover svg .cat-dot, .header__area.sticky .cat-menu:hover svg .cat-dot {
   fill: #2b4eff;
 }
-.header__area.sticky .cat-menu svg .cat-dot {
+.header__transparent .cat-menu svg .cat-dot, .header__area.sticky .cat-menu svg .cat-dot {
   fill: #0e1133;
 }
-.header__area.sticky .header__category::after {
+.header__transparent .header__category::after, .header__area.sticky .header__category::after {
   background: rgba(14, 17, 51, 0.2);
 }
-.header__area.sticky .sidebar-toggle-btn .line {
+.header__transparent .sidebar-toggle-btn .line, .header__area.sticky .sidebar-toggle-btn .line {
   background-color: #2b4eff;
 }
 .header__transparent {
@@ -1146,7 +1146,13 @@ p {
 .header__btn-2 a {
   height: 44px;
   line-height: 44px;
-  padding: 0 38px;
+  /* padding: 0 38px; */
+}
+/* #header-sticky {
+  height: 80px;
+} */
+.e-btn {
+  white-space: nowrap;
 }
 .header__search-3 {
   position: fixed;
@@ -1326,12 +1332,12 @@ p {
 }
 @media only screen and (min-width: 1400px) and (max-width: 1600px) {
   .main-menu ul li:not(:first-child) {
-    margin-left: 30px;
+    margin-left: 80px;
   }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .main-menu ul li:not(:first-child) {
-    margin-left: 10px;
+    margin-left: 50px;
   }
 }
 .main-menu ul li a {
@@ -1339,7 +1345,7 @@ p {
   font-size: 16px;
   font-weight: 500;
   color: #0e1133;
-  padding: 35px 0;
+  padding: 28px 0;
   text-transform: capitalize;
 }
 .main-menu ul li.has-dropdown > a {
@@ -2744,7 +2750,7 @@ p {
 .course__rating span {
   font-size: 16px;
 }
-.course__rating span i {
+.about__student a i,.course__rating span i {
   padding-right: 5px;
   color: #ff9415;
 }
@@ -6788,7 +6794,7 @@ p.checkout-coupon input[type=text]:focus {
   transform: translateY(0);
 }
 .slider__height {
-  min-height: 950px;
+  min-height: 800px;
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .slider__height {
@@ -8598,5 +8604,3 @@ p.checkout-coupon input[type=text]:focus {
 .footer__copyright-2 p a {
   color: #2b4eff;
 }
-
-/*# sourceMappingURL=style.css.map */
