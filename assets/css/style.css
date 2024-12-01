@@ -1547,13 +1547,13 @@ p {
   display: inline-block;
 }
 
-.main-menu ul li:hover>a {
+/* .main-menu ul li:hover>a {
   color: #2b4eff;
 }
 
 .main-menu ul li:hover>a::after {
   color: #2b4eff;
-}
+} */
 
 .main-menu ul li:hover .submenu {
   top: 100%;
@@ -1706,7 +1706,7 @@ p {
   content: "";
   left: auto;
   right: 0;
-  bottom: 38px;
+  bottom: 32px;
   width: 0%;
   height: 1px;
   background: #ffffff;
@@ -1720,9 +1720,9 @@ p {
   color: #0e1133;
 }
 
-.main-menu-3 ul li:hover a {
+/* .main-menu-3 ul li:hover a {
   color: #ffffff;
-}
+} */
 
 .main-menu-3 ul li:hover a::before {
   width: 100%;
