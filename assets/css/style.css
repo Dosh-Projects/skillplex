@@ -9997,3 +9997,11 @@ p.checkout-coupon input[type=text]:focus {
 .footer__logo {
   filter: invert(200);
 }
+.brand__slider .swiper-slide {
+  justify-items: center;
+  align-items: center;
+  height: 100%;
+  width: fit-content !important;
+  min-height: 250px;
+  display: flex;
+}
